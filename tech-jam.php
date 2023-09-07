@@ -16,26 +16,27 @@
         //even v
         if ($i % 2 == 0) {
             echo "<b> $i </b>" . "<br>";
-            //oneven v
-        } elseif ($i % 2 != 0) {
-            echo "$i " . "<br>";
-        } else {
-            echo "hoe is dit een nummer";
         }
-
-        // hier wordt het gecheckt of ik het kan delen tussen 5,9 en 5&9
-        // gedeeld door 5 v
-        if ($i % 5 == 0) {
+            //oneven v
+            // hier wordt het gecheckt of ik het kan delen tussen 5,9 en 5&9
+                            // gedeeld door 5&9 v
+        elseif ($i % 5 == 0 && $i % 9 == 0) {
+            echo "Web" . "<br>";
+        } 
+            // gedeeld door 5 v
+        elseif ($i % 5 == 0) {
             echo "Software" . "<br>";
         }
         // gedeeld door 9 v
-        if ($i % 9 == 0) {
+        elseif ($i % 9 == 0) {
             echo "Developer" . "<br>";
         }
-                // gedeeld door 5&9 v
-        if ($i % 5 == 0 && $i % 9 == 0) {
-            echo "Web" . "<br>";
+
+        else{
+            echo "$i " . "<br>";
         }
+
+
 
 
 
